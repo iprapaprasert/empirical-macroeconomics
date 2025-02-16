@@ -3,5 +3,3 @@ subroutine consipolate(string %series, string %to, scalar !value)
     %period = %from + " " + %to
     series {%series} = @recode(@during(%period), !value, {%series})
 endsub
-
-
